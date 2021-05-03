@@ -1,0 +1,505 @@
+#!/bin/bash
+
+		W='\033[1;0m'
+                R='\033[1;31m'
+                G='\033[1;32m'
+                Y='\033[1;33m'
+                B='\033[1;34m'
+                M='\033[1;35m'
+                C='\033[1;36m'
+                W='\033[0m'
+
+banner(){
+clear
+figlet -f small tools | lolcat
+}
+
+menu(){
+echo "
+[1] Lazymux
+[2] Credmap
+[3] Hammer
+[4] GoblinWordGenerator
+[5] XAttacker
+[6] Clickjacking-Tester
+[7] CMSeeK
+[8] M4ll0k
+[9] DeepSearch
+[10] Hacktronian
+[11] Prueblood
+[12] 0WScan
+[13] Shellphish
+[14] Fbbrute almu007
+[15] IP-FY
+[16] SocialBox
+[17] Termux-Lazyscript
+[18] ReconDog
+[19] Captain-Bru
+[20] Termux-Banner
+[21] OSIF
+[22] Termux-Packages
+[23] EvilURL
+[24] Hulk
+[25] Saycheese
+[26] Websploit
+[27] Wordlist
+[28] Exploitinsta
+[29] Mercury
+[30] PhoneSploit
+[31] Lazymux
+[32] Msf-unstable-patch
+[33] Th3inspector
+[34] STARK2.0
+[35] BRUTEFORCEnew
+[36] Cracker
+[37] Torghost
+[38] LazyMeta
+[39] Termux-ohmyzsh
+[40] SVScanner
+[41] Veil
+[42] Termux_login
+[43] STRANGER
+[44] whatsapp-baneo
+[45] Impulse
+[46] Cam-Hackers
+[47] Malicious
+[48] A2sv
+[49] RED_HAWK
+[50] Ipmux
+[51] Papaviruz
+[52] Wiki-termux
+[53] STP
+[54] Gametool
+[55] Winspy
+[56] Tool-X
+[57] Encrypt
+[58] WHA
+[59] Geometric-calculator
+[60] Dox_ip
+[61] HoneyTools
+[62] Funlett
+[63] FotoSploit
+[64] Routersploit
+[65] BlackMafiaTool
+[66] RootTH
+[67] Metasploit
+[68] CC-MundoRH
+[69] Facebook_brute
+[70] Irparpaya-a
+[71] UP
+[72] Camuflink
+[73] shellphish
+[74] EmailSpoofing
+[75] T-Banner4
+[76] Koroni
+[77] Sys0-termux
+[78] Tphish
+
+[00] Back to main menu
+"
+
+read -p "Escoga una opcion ---> " opc
+
+if [ $opc == "1" ];then
+banner
+menu
+git clone https://github.com/Gameye98/Lazymux
+
+elif [ $opc == "2" ];then
+git clone https://github.com/lightos/credmap
+banner
+menu
+
+elif [ $opc == "3" ];then
+git clone https://github.com/cyweb/hammer
+banner
+menu
+
+elif [ $opc == "4" ];then
+git clone https://github.com/UndeadSec/GoblinWordGenerator
+banner
+menu
+
+elif [ $opc == "5" ];then
+git clone https://github.com/Moham3dRiahi/XAttacker/
+banner
+menu
+
+elif [ $opc == "6" ];then
+git clone https://github.com/D4Vinci/Clickjacking-Tester
+banner
+menu
+
+elif [ $opc == "7" ];then
+git clone https://github.com/Tuhinshubhra/CMSeeK
+banner
+menu
+
+elif [ $opc == "8" ];then
+git clone https://github.com/m4ll0k
+banner
+menu
+
+elif [ $opc == "9" ];then
+git clone https://github.com/m4ll0k/DeepSearch.git deepsearc
+banner
+menu
+
+elif [ $opc == "10" ];then
+git clone https://github.com/thehackingsage/hacktronian.git
+banner
+menu
+
+elif [ $opc == "11" ];then
+git clone https://github.com/cr4shcod3/pureblood
+banner
+menu
+
+elif [ $opc == "12" ];then
+git clone https://github.com/Gameye98/OWScan
+banner
+memu
+
+elif [ $opc == "13" ];then
+git clone https://github.com/thelinuxchoice/shellphish
+banner
+menu
+
+elif [ $opc == "14" ];then
+git clone https://github.com/Senitopeng/fbbrute  almu007
+banner
+menu
+
+elif [ $opc == "15" ];then
+git clone https://github.com/T4P4N/IP-FY
+banner
+menu
+
+elif [ $opc == "16" ];then
+git clone https://github.com/TunisianEagles/SocialBox
+banner
+menu
+
+elif [ $opc == "17" ];then
+git clone https://github.com/TechnicalMujeeb/Termux-Lazyscript.git
+banner
+menu
+
+elif [ $opc == "18" ];then
+git clone https://github.com/UltimateHackers/ReconDog.git
+banner
+menu
+
+elif [ $opc == "19" ];then
+git clone https://github.com/CybernetiX-S3C/Captain-Bru
+banner
+menu
+
+elif [ $opc == "20" ];then
+git clone https://github.com/Bhai4You/Termux-Banner
+banner
+menu
+
+elif [ $opc == "21" ];then
+git clone https://github.com/ciku370/OSIF
+banner
+menu
+
+elif [ $opc == "22" ];then
+git clone https://github.com/Technoasho?cial/Termux-packages
+banner
+menu
+
+elif [ $opc == "23" ];then
+git clone https://github.com/UndeadSec/EvilURL.git
+banner
+menu
+
+elif [ $opc == "24" ];then
+git clone https://github.com/darkwarrior3/hulk.git
+banner
+menu
+
+elif [ $opc == "25" ];then
+git clone https://github.com/thelinuxchoice/saycheese
+banner
+menu
+
+elif [ $opc == "26" ];then
+git clone https://github.com/websploit/websploit.git
+banner
+menu
+
+elif [ $opc == "27" ];then
+git clone https://github.com/Cabdulahi/wordlist
+banner
+menu
+
+elif [ $opc == "28" ];then
+git clone https://github.com/Nikhiltripathi90/Exploitinsta
+banner
+menu
+
+elif [ $opc == "29" ];then
+git clone https://www.github.com/MetaChar/Mercury
+banner
+menu
+
+elif [ $opc == "30" ];then
+git clone https://github.com/metachar/PhoneSploit.git
+banner
+menu
+
+elif [ $opc == "31" ];then
+git clone https://github.com/Gameye98/Lazymux
+banner
+menu
+
+elif [ $opc == "32" ];then
+git clone https://github.com/remo7777/msf-unstable-patch.git
+banner
+menu
+
+elif [ $opc == "33" ];then
+git clone https://github.com/Moham3dRiahi/Th3inspector.git
+banner
+menu
+
+elif [ $opc == "34" ];then
+git clone https://github.com/aniketstark/STARK2.0
+banner
+menu
+
+elif [ $opc == "35" ];then
+git clone https://github.com/FR13ND8/BRUTEFORCEnew
+banner
+menu
+
+elif [ $opc == "36" ];then
+git clone https://github.com/AlatToll/cracker.git
+banner
+menu
+
+elif [ $opc == "37" ];then
+git clone https://github.com/susmithHCK/torghost.git
+banner
+menu
+
+elif [ $opc == "38" ];then
+git clone https://github.com/aniketstark/LazyMeta
+banner
+manu
+
+elif [ $opc == "39" ];then
+git clone https://github.com/Cabbagec/termux-ohmyzsh
+banner
+menu
+
+elif [ $opc == "40" ];then
+git clone https://github.com/radenvodka/SVScanner.git
+banner
+menu
+
+elif [ $opc == "41" ];then
+git clone https://github.com/Veil-Framework/Veil.git
+banner
+menu
+
+elif [ $opc == "42" ];then
+git clone https://github.com/ivam3/Termux_login.git
+banner
+menu
+
+elif [ $opc == "43" ];then
+git clone https://github.com/UpsideDown- ux/STRANGER
+banner
+menu
+
+elif [ $opc == "44" ];then
+git clone https://github.com/Hacking-pch/whatsapp-baneo
+banner
+menu
+
+elif [ $opc == "45" ];then
+git clone https://github.com/LimerBoy/Impulse
+banner
+menu
+
+elif [ $opc == "46" ];then
+git clone ?https://github.com/AngelSecurityTeam/Cam-Hackers
+banner
+menu
+
+elif [ $opc == "47" ];then
+git clone ?https://github.com/TheReaper167/Malicious
+banner
+menu
+
+elif [ $opc == "48" ];then
+git clone ?https://github.com/hahwul/a2sv
+banner
+menu
+
+elif [ $opc == "49" ];then
+git clone ?https://github.com/Tuhinshubhra/RED_HAWK
+banner
+menu
+
+elif [ $opc == "50" ];then
+git clone https://github.com/Amriez/ipmux
+banner
+menu
+
+elif [ $opc == "51" ];then
+git clone ?https://github.com/Hacking-pch/papaviruz
+banner
+menu
+
+elif [ $opc == "52" ];then
+git clone https://github.com/DeepSociety/wiki-termux
+banner
+menu
+
+elif [ $opc == "53" ];then
+git clone https://github.com/DeepSociety/STP
+banner
+menu
+
+elif [ $opc == "54" ];then
+git clone https://github.com/mbest99/gametool
+banner
+menu
+
+elif [ $opc == "55" ];then
+git clone https://github.com/TunisianEagles/winspy.git
+banner
+menu
+
+elif [ $opc == "56" ];then
+git clone https://github.com/rajkumardusad/Tool-X.git
+banner
+menu
+
+elif [ $opc == "57" ];then
+git clone https://github.com/ch0l0hatwhite/Encrypt
+banner
+menu
+
+elif [ $opc == "58" ];then
+git clone https://github.com/ch0l0hatwhite/WHA
+banner
+menu
+
+elif [ $opc == "59" ];then
+git clone https://github.com/ch0l0hatwhite/geometric-calculator
+banner
+menu
+
+elif [ $opc == "60" ];then
+git clone https://github.com/Lac0lm3n4/Dox_ip
+banner
+menu
+
+elif [ $opc == "61" ];then
+git clone https://github.com/Lac0lm3n4/HoneyTools
+banner
+menu
+
+elif [ $opc == "62" ];then
+git clone https://github.com/TermuxHacking000/Funlett
+banner
+menu
+
+elif [ $opc == "63" ];then
+git clone https://github.com/Cesar-Hack-Gray/FotoSploit
+banner
+menu
+
+elif [ $opc == "64" ];then
+git clone https://github.com/threat9/routersploit
+banner
+menu
+
+elif [ $opc == "65" ];then
+git clone https://github.com/lovehacker404/BlackMafiaTool
+banner
+menu
+
+elif [ $opc == "66" ];then
+git clone https://github.com/TermuxHacking000/RootTH
+banner
+menu
+
+elif [ $opc == "67" ];then
+git clone https://github.com/Darkmux/Metasploit
+banner
+menu
+
+elif [ $opc == "68" ];then
+git clone https://github.com/RealHackRH593/CC-MundoRH
+banner
+menu
+
+elif [ $opc == "69" ];then
+git clone https://github.com/perjayro/Facebook_brute.git
+banner
+menu
+
+elif [ $opc == "70" ];then
+git clone https://github.com/HackeRStrategy/Irparpaya-a.git
+banner
+menu
+elif [ $opc == "71" ];then
+git clone https://github.com/ch0l0hatwhite/UP
+banner
+menu
+
+elif [ $opc == "72" ];then
+git clone https://github.com/ch0l0hatwhite/camuflink
+banner
+menu
+
+elif [ $opc == "73" ];then
+git clone https://github.com/thelinuxchoice/shellphish
+banner 
+menu
+
+elif [ $opc == "74" ];then
+git clone https://github.com/TermuxHacking000/EmailSpoofing
+banner
+menu
+
+elif [ $opc == "75" ];then
+git clone https://github.com/Anonymous-Zpt/T-banner4
+banner
+menu
+
+elif [ $opc == "76"];then
+git clone https://github.com/DeepSociety/koroni
+banner
+menu
+
+elif [ $opc == "77" ];then
+git clone https://github.com/TermuxHacking000/SysO-Termux
+banner
+menu
+
+elif [ $opc == "78" ];then
+git clone https://github.com/Lac0lm3n4/tphish.git
+banner
+menu
+
+elif [[ $opc == "00" || $opc == "0" ]];then
+bash todo/.termux
+
+else
+echo "$R [!] ERROR escoja otra opcion"
+sleep 1
+menu
+
+fi
+}
+
+
+banner
+menu

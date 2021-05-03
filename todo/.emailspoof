@@ -1,0 +1,33 @@
+#!/bin/python
+
+import getpass, smtplib, os
+
+os.system("figlet -f small EmailSpoofing | lolcat")
+print("""
+[1] Seguir usando EmailSpoofing
+
+[00] Regresar al menu
+""")
+men = input("Escoje una opcion ---> ")
+
+if men == 1:
+	user = input("Correo ---> ")
+	password = getpass.getpass("Contraseña ---> ")
+	victima = input("Correo (victima) ---> ")
+	msg = input("Mensaje ---> ")
+	try:
+		server = smtp.SMTP_SSL('smtp.gmail.com',465)
+		server.login(user, password)
+		server.sendmail(usuario, victima, msg)
+		(quit)
+		print('error')
+	except:
+		print('realizado con éxito ==> √')
+
+elif men == 2:
+	os.system("clear")
+	os.system("python asistente.py")
+
+else:
+	print("[!] ERROR escoja una opcion")
+	os.system("python todo/.emailspoof")

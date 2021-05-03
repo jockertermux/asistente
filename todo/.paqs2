@@ -1,0 +1,281 @@
+#!/bin/bash
+
+		R='\033[1;31m'
+		G='\033[1;32m'
+                Y='\033[1;33m'
+                B='\033[1;34m'
+                M='\033[1;35m'
+                C='\033[1;36m'
+                W='\033[0m'
+opc(){
+clear
+figlet -f small paquetes | lolcat
+echo -e "
+$R [$W 1$R ]$W Python
+$R [$W 2$R ]$W Python2
+$R [$W 3$R ]$W Fish
+$R [$W 4$R ]$W Ruby
+$R [$W 5$R ]$W Help
+$R [$W 6$R ]$W Git
+$R [$W 7$R ]$W Host
+$R [$W 8$R ]$W Php
+$R [$W 9$R ]$W Perl
+$R [$W 10$R ]$W Nmap
+$R [$W 11$R ]$W Bash
+$R [$W 12$R ]$W Clang
+$R [$W 13$R ]$W Nano
+$R [$W 14$R ]$W Figlet
+$R [$W 15$R ]$W Cowsay
+$R [$W 16$R ]$W Curl
+$R [$W 17$R ]$W Tar
+$R [$W 18$R ]$W Zip
+$R [$W 19$R ]$W Unzip
+$R [$W 20$R ]$W Wget
+$R [$W 21$R ]$W Wgetrc
+$R [$W 22$R ]$W Wcalc
+$R [$W 23$R ]$W Bmon
+$R [$W 24$R ]$W Unrar
+$R [$W 25$R ]$W Toilet
+$R [$W 26$R ]$W Proot
+$R [$W 27$R ]$W Net-tools
+$R [$W 28$R ]$W Golang
+$R [$W 29$R ]$W Macchanger
+$R [$W 30$R ]$W Openssl
+$R [$W 31$R ]$W Cmatrix
+$R [$W 32$R ]$W Openssh
+$R [$W 33$R ]$W W3m
+$R [$W 34$R ]$W Htop
+$R [$W 35$R ]$W Vim
+$R [$W 36$R ]$W Neofetch
+$R [$W 37$R ]$W Crunch
+$R [$W 38$R ]$W Tmux
+$R [$W 39$R ]$W Mc
+$R [$W 40$R ]$W Cacafire
+$R [$W 41$R ]$W Irssi
+$R [$W 42$R ]$W x11-repo
+$R [$W 43$R ]$W Apache2
+$R [$W 44$R ]$W Openssl
+$R [$W 45$R ]$W Sl
+$R [$W 46$R ]$W Translate-shell
+$R [$W 47$R ]$W Axel
+$R [$W 48$R ]$W Mariadb
+$R [$W 49$R ]$W Openssh
+$R [$W 50$R ]$W Util-linux
+
+$R [$W 00$R ]$W Back to main menu
+"
+
+read -p "Opcion ---> " opc
+if [ $opc == "1" ];then
+pkg install python -y
+opc
+
+elif [ $opc == "2" ];then
+pkg install python2 -y
+opc
+
+elif [ $opc == "3" ];then
+pkg install fish -y
+opc
+
+elif [ $opc == "4" ];then
+pkg install ruby -y
+opc
+
+elif [ $opc == "5" ];then
+pkg install help -y
+opc
+
+elif [ $opc == "6" ];then
+pkg install git -y
+opc
+
+elif [ $opc == "7" ];then
+pkg install host -y
+opc
+
+elif [ $opc == "8" ];then
+pkg install php -y
+opc
+
+elif [ $opc == "9" ];then
+pkg install perl -y
+opc
+
+elif [ $opc == "10" ];then
+pkg install nmap -y
+opc
+
+elif [ $opc == "11" ];then
+pkg install bash -y
+opc
+
+elif [ $opc == "12" ];then
+pkg install clang -y
+opc
+
+elif [ $opc == "13" ];then
+pkg install nano -y
+opc
+
+elif [ $opc == "14" ];then
+pkg install figlet -y
+opc
+
+elif [ $opc == "15" ];then
+pkg install cowsay -y
+opc
+
+elif [ $opc == "16" ];then
+pkg install curl -y
+opc
+
+elif [ $opc == "17" ];then
+pkg install tar -y
+opc
+
+elif [ $opc == "18" ];then
+pkg install zip -y
+opc
+
+elif [ $opc == "19" ];then
+pkg install unzip -y
+opc
+
+elif [ $opc == "20" ];then
+pkg install wget -y
+opc
+
+elif [ $opc == "21" ];then
+pkg install wgetrc -y
+opc
+
+elif [ $opc == "22" ];then
+pkg install wcalc -y
+opc
+
+elif [ $opc == "23" ];then
+pkg install bmon -y
+opc
+
+elif [ $opc == "24" ];then
+pkg install unrar -y
+opc
+
+elif [ $opc == "25" ];then
+pkg install toilet -y
+opc
+
+elif [ $opc == "26" ];then
+pkg install proot -y
+opc
+
+elif [ $opc == "27" ];then
+pkg install net-tools -y
+opc
+
+elif [ $opc == "28" ];then
+pkg install golang -y
+opc
+
+elif [ $opc == "29" ];then
+pkg install macchanger -y
+opc
+
+elif [ $opc == "30" ];then
+pkg install openssl -y
+opc
+
+elif [ $opc == "31" ];then
+pkg install cmatrix -y
+opc
+
+elif [ $opc == "32" ];then
+pkg install openssh -y
+opc
+
+elif [ $opc == "33" ];then
+pkg install w3m -y
+opc
+
+elif [ $opc == "34" ];then
+pkg install htop -y
+opc
+
+elif [ $opc == "35" ];then
+pkg install vim -y
+opc
+
+elif [ $opc == "36" ];then
+pkg install neofetch -y
+opc
+
+elif [ $opc == "37" ];then
+pkg install crunch -y
+opc
+
+elif [ $opc == "38" ];then
+pkg install tmux -y
+opc
+
+elif [ $opc == "39" ];then
+pkg install mc
+opc
+
+elif [ $opc == "40" ];then
+pkg install cacafire
+opc
+
+elif [ $opc == "41" ];then
+pkg install irssi
+opc
+
+elif [ $opc == "42" ];then
+pkg install x11-repo
+opc
+
+elif [ $opc == "43" ];then
+pkg install apache2
+opc
+
+elif [ $opc == "44" ];then
+pkg install openssl
+opc
+
+elif [ $opc == "45" ];then
+pkg install sl
+opc
+
+elif [ $opc == "46" ];then
+pkg install translate-shell
+opc
+
+elif [ $opc == "47" ];then
+pkg install axel
+opc
+
+elif [ $opc == "48" ];then
+pkg install mariadb
+opc
+
+elif [ $opc == "49" ];then
+pkg install openssh
+opc
+
+elif [ $opc == "50" ];then
+pkg install util-linux
+opc
+
+elif [[ $opc == "00" || $opc == "0" ]];then
+bash todo/.termux
+
+else
+echo "$R [!] ERROR escoja otra opcion"
+sleep 1
+opc
+
+fi
+
+}
+
+opc

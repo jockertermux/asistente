@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cd $HOME
+echo "alias asistente='cd asistente/;python asistente.py'" >> .bashrc
+pkg install python -y
+pkg install python2 -y
+pkg install ruby -y && gem install lolcat
+pkg install nmap -y
+pkg install figlet -y
+pkg install wget -y
+pkg install translate-shell
+pip install pybase64
+pip install smtplib
+pip install getpass
+
+rm .paquetes
+mv todo/.fin todo/.paquetes
+

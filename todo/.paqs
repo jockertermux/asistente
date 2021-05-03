@@ -1,0 +1,54 @@
+#!/bin/bash
+
+		R='\033[1;31m'
+		G='\033[1;32m'
+                Y='\033[1;33m'
+                B='\033[1;34m'
+                M='\033[1;35m'
+                C='\033[1;36m'
+                W='\033[0m'
+menu(){
+figlet -f small Paquetes | lolcat
+echo -e "$R [$W 1$R ]$W Todos los paquetes"
+echo -e "$R [$W 2$R ]$W Paquetes instalados"
+echo -e "$R [$W 3$R ]$W Descripsion del comando"
+echo ""
+echo -e "$R [$W 00$R ]$W Back to main menu"
+echo ""
+read -p "Opcion---> " opc
+
+if [[ $opc == "1" ]];then
+apt list
+sleep 1
+
+echo "--------------------------"
+menu
+
+elif [[ $opc == "2" ]];then
+clear
+apt list --installed
+sleep 1
+echo "---------------------------"
+menu
+
+elif [[ $opc == "3" ]];then
+clear
+read -p "Comando---> " show
+apt show $show
+echo "---------------------------"
+menu
+
+elif [[ $opc == "00" || $opc == "0" ]];then
+clear
+python asistente.py
+
+else
+echo -e "$R [!] ERROR escoja otra opcion"
+sleep 1
+menu
+
+fi
+
+}
+
+menu

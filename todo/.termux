@@ -1,0 +1,50 @@
+#!/bin/bash
+
+W='\033[1;0m'
+                R='\033[1;31m'
+                G='\033[1;32m'
+                Y='\033[1;33m'
+                B='\033[1;34m'
+		M='\033[1;35m'
+                C='\033[1;36m'
+                W='\033[0m'
+
+opc(){
+clear
+figlet -f small Termux
+echo -e "
+$R [$W 1$R ]$W Tools
+$R [$W 2$R ]$W Paquetes
+$R [$W 3$R ]$W Games
+$R [$W 4$R ]$W Calculadora
+
+$R [$W 00$R ]$W Volver al asistente
+"
+
+read -p "Opcion ---> " opc
+
+if [ $opc == "1" ];then
+bash todo/.herramientas
+
+elif [ $opc == "2" ];then
+bash todo/.paqs2
+
+elif [ $opc == "3" ];then
+bash todo/.gam
+
+elif [ $opc == "4" ];then
+python todo/.cal.py
+
+elif [[ $opc == "00" || $opc == "0" ]];then
+python asistente.py
+
+else
+echo "$R [!] ERROR escoja otra opcion"
+sleep 1
+
+opc
+
+fi
+}
+
+opc

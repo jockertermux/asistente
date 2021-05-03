@@ -1,0 +1,86 @@
+#!/bin/bash
+
+		R='\033[1;31m'
+                G='\033[1;32m'
+                Y='\033[1;33m'
+                B='\033[1;34m'
+                M='\033[1;35m'
+                C='\033[1;36m'
+                W='\033[0m'
+
+menu(){
+clear
+figlet -f small Games | lolcat
+echo -e "
+$R [$W 1$R ]$W 2048
+$R [$W 2$R ]$W Angband
+$R [$W 3$R ]$W Progue
+$R [$W 4$R ]$W Curseofwar
+$R [$W 5$R ]$W Gnugo
+$R [$W 6$R ]$W Greed
+$R [$W 7$R ]$W Mathomatic
+$R [$W 8$R ]$W Moon-buggy
+$R [$W 9$R ]$W Snakegame
+$R [$W 10$R ]$W Solitaire
+
+$R [$W 00$R ]$W Back to main menu
+"
+read -p "Opcion ---> " opc
+
+if [[ $opc == "1" ]];then
+pkg install 2048
+menu
+
+elif [[ $opc == "2" ]];then
+pkg install angband
+menu
+
+elif [[ $opc == "3" ]];then
+pkg install progue
+menu
+
+elif [[ $opc == "4" ]];then
+pkg install curseofwar
+menu
+
+elif [[ $opc == "5" ]];then
+pkg install gnugo
+menu
+
+elif [[ $opc == "6" ]];then
+pkg install greed
+menu
+
+elif [[ $opc == "7" ]];then
+pkg install mathomatic
+menu
+
+elif [[ $opc == "8" ]];then
+pkg install moon-buggy
+menu
+
+elif [[ $opc == "9" ]];then
+pkg install snakegame
+menu
+
+elif [[ $opc == "10" ]];then
+pkg install solitaire
+menu
+
+elif [[ $opc == "00" || $opc == "0" ]];then
+bash todo/.termux
+
+elif [[ $opc == "" ]];then
+echo -e "$R [!] ERROR escoja otra opcion"
+menu
+
+else
+echo -e "$R [!] ERROR escoja otra opcion"
+sleep 1
+menu
+
+fi
+}
+
+
+menu
