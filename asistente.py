@@ -13,30 +13,37 @@ def slowprint(s):
             time.sleep(1./500)
 print("Instalando paquetes")
 def hola():
-	
-	os.system("figlet -f small Asistente | lolcat")
-	print("                   \033[1;32mby:\033[1;0m Jocker Termux")
+	os.system("bash todo/.paquetes")
 	slowprint("""
-..................:::menu:::...............
-\033[1;31m[\033[1;0m1\033[1;31m]\033[1;0m Ayuda en bash
-\033[1;31m[\033[1;0m2\033[1;31m]\033[1;0m Ayuda en python
-\033[1;31m[\033[1;0m3\033[1;31m]\033[1;0m Clonar sitios web
-\033[1;31m[\033[1;0m4\033[1;31m]\033[1;0m Codificar texto con base64
-\033[1;31m[\033[1;0m5\033[1;31m]\033[1;0m Descodificar
-\033[1;31m[\033[1;0m6\033[1;31m]\033[1;0m Escanear web con nmap
-\033[1;31m[\033[1;0m7\033[1;31m]\033[1;0m Info. de los paquetes
-\033[1;31m[\033[1;0m8\033[1;31m]\033[1;0m Traductor
-\033[1;31m[\033[1;0m9\033[1;31m]\033[1;0m Descargar curso bash
-\033[1;31m[\033[1;0m10\033[1;31m]\033[1;0m Descargar curso python
-\033[1;31m[\033[1;0m11\033[1;31m]\033[1;0m Termux
-\033[1;31m[\033[1;0m12\033[1;31m]\033[1;0m Usar sqlmap
-\033[1;31m[\033[1;0m13\033[1;31m]\033[1;0m EmailSpoofing
 
-\033[1;31m[\033[1;0m00\033[1;31m]\033[1;0m Salir
-\033[0m
-.........................................""")
+                      _    _           _
+              __ _ __(_)__| |_ ___ _ _| |_ ___
+             / _` (_-< (_-<  _/ -_) ' \  _/ -_)
+             \ _,_/__/_/_ /\__\_ _|_||_\__\__ |
+              \/        \/      \/          \/
+""")
+	slowprint("                           \033[1;32mby:\033[1;0m Jocker Termux")
+	slowprint("""
+            ..................:::menu:::...............
+            \033[1;31m[\033[1;0m01\033[1;31m]\033[1;0m Ayuda en bash
+            \033[1;31m[\033[1;0m02\033[1;31m]\033[1;0m Ayuda en python
+            \033[1;31m[\033[1;0m03\033[1;31m]\033[1;0m Clonar sitios web
+            \033[1;31m[\033[1;0m04\033[1;31m]\033[1;0m Codificar texto con base64
+            \033[1;31m[\033[1;0m05\033[1;31m]\033[1;0m Descodificar
+            \033[1;31m[\033[1;0m06\033[1;31m]\033[1;0m Escanear web con nmap
+            \033[1;31m[\033[1;0m07\033[1;31m]\033[1;0m Info. de los paquetes
+            \033[1;31m[\033[1;0m08\033[1;31m]\033[1;0m Traductor
+            \033[1;31m[\033[1;0m09\033[1;31m]\033[1;0m Descargar curso bash
+            \033[1;31m[\033[1;0m10\033[1;31m]\033[1;0m Descargar curso python
+            \033[1;31m[\033[1;0m11\033[1;31m]\033[1;0m Termux
+            \033[1;31m[\033[1;0m12\033[1;31m]\033[1;0m Usar sqlmap
+            \033[1;31m[\033[1;0m13\033[1;31m]\033[1;0m EmailSpoofing
+
+            \033[1;31m[\033[1;0m00\033[1;31m]\033[1;0m Salir
+            \033[0m
+            ..........................................""")
 	print("")
-	opc = int(input("opcion ---> "))
+	opc = int(input("            opcion ---> "))
 	print("")
 	if opc == 1:
 		slowprint("Esperando respuestas....")
